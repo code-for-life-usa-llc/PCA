@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+        li {
+        float: left;
+        }
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+        li a:hover {
+        background-color: white;
+        }
+        #Center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #center2 {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+        }
+        #move {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+        }
+        #spread {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            margin-bottom: 225px;
+        }
+        #parallax{
+            background-image: url(image.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        min-width: 100vw;
+        min-height:100vh;
+        position:absolute;
+        top: 0px;
+        left: 0px;
+        }
+        #Center {
+            background-color: rgba(0, 128, 0, 0.475);
+            padding: 20px;
+            margin: 0px 25vw;
+            border-radius: 30px;
+        }
+        #center2{
+            color: white;
+            padding: 20px;
+            margin: 20px 28vw;
+            background-color: rgba(128, 128, 128, 0.56);
+            border-radius: 30px;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+        }
+        body{
+            overflow-x: hidden;
+   -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+        }
+        body::-webkit-scrollbar {
+   display: none;
+ }
+    </style>
+</head>
+<body>
+    <div id="parallax">
+    <ul>
+        <li><a href="project.html">Home Page</a></li>
+        <li><a href="child-abuse.html">Child Abuse</a></li>
+        <li><a href="animal-abuse.html">Animal Abuse</a></li>
+        <li><a href="#">Emotinal Abuse</a></li>
+        <li><a href="Solution.html">Soultion</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+    <div id="Center">
+        <h1>Solutions for Abuse</h1>
+    </div>
+    <div id="center2">
+        <h1 id="Abuse">Click on buttons below to see every solution</h1>
+    </div>
+    <div id="spread">
+        <button onclick="document.getElementById('Abuse').innerHTML = 'Child Abuse <p> Tell the parents to calm down.</p><p> Creating social connectons with family and friends. </p><p>Recognize the link between domestic abuse and animal abuse</p>'"> Child Abuse</button>
+        <button onclick="document.getElementById('Abuse').innerHTML = 'Animal Abuse <p>  Recognize the link between domestic abuse and animal abuse.</p><p>Teach children and others to respect animals.</p><p> How children treat animals comes from how the adults in their lives treat animals.</p>'"> Animal Abuse</button>
+        <button  onclick="document.getElementById('Abuse').innerHTML = 'Emotional Abuse <p> Understand the abuser - even though it can seem weird to have compassion for the abuser, sometimes changing the way you view the abuser can give you insight into coping with the abuse. Often abusers are insecure, anxious or depressed and remembering that may help you to keep the abuse in its proper context.</p> <p>Speak in a calm, clear voice and state a reasonable expectation such as: Stop teasing me. I want you to treat me with dignity and respect.</p> <p>Remember you are not alone and that the abuse is not your fault Call a help-line. Go to Womanslaw.org to find state and national help. Contact a child and family welfare agency.Talk to your doctor or other health professionals</p>'"> Emotional Abuse</button>
+    </div>
+    </div>
+    <!-- <ul>
+        <li id="Soultion">Tell the parents to CALM DOWN</li>
+        <br>
+        <li>Creating social connections with family and friends.</li>
+        <br>
+        <li>Tell the parents to count from 1 to 10.</li>
+        <br>
+        <li>Recognize the link between domestic abuse and animal abuse.</li>
+    </ul> -->
+</body>
+</html>

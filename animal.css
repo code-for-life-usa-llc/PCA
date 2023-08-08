@@ -12,22 +12,27 @@
     justify-content: center;
 }
 .H{
-    margin: 0px 10px 10px 25%;
+    position: relative;
+    margin: 6px 6px 6px 6px;
+    
 }
 .damn{
+    position: relative;
+    left: 300px;
     color: black;
-    background-color: rgba(56, 125, 125, 0.42);
+    background-color: turquoise;
     width: 200px;
     height: 200px;
     margin: 25px 10px 10px 20px;
 }
 .I{
-    margin: 10px 100px 10px 10px;
+    position: relative;
+    margin: 10px 500px 10px 10px;
   padding: 10px;
 }
 .NASA{
     color: black;
-    background-color: rgba(56, 125, 125, 0.42);
+    background-color: turquoise;
     width: 200px;
     height: 200px;
     margin: 70px 60px 10px 900px;
@@ -37,8 +42,11 @@
     padding: 10px;
 }
 .Yeah{
+    position: relative;
+    left: 225px;
+    top: 30px;
     color: black;
-    background-color: rgba(56, 125, 125, 0.42);
+    background-color:turquoise;
     width: 200px;
     height: 200px;
     margin: 10px 10px 10px 10px;
@@ -65,7 +73,7 @@ padding: 14px 16px;
 text-decoration: none;
 }
 li a:hover {
-background-color: #111;
+background-color: white;
 }
 #Main-Text{
 position: relative;
@@ -77,7 +85,7 @@ top: 30px;
     left: 600px;
 }
 #parallax {
-        background-image: url(Eagle.jpg);
+        background-image: url(image.png);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
@@ -87,9 +95,15 @@ top: 30px;
         top: 0px;
         left: 0px;
   }
-body {
+  body {
+    /*display: flex;
+    justify-content: flex-end;
+    flex-direction: column;*/
     overflow-x: hidden;
-}
-#background {
-    background-color: rgba(0, 0, 182, 0.382);
-}
+    -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+  }
+ 
+  body::-webkit-scrollbar {
+    display: none;
+  }
