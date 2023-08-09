@@ -5,33 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    background-color: #111;
-  }
         #Center{
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        #content {
+            margin: 30px;
         }
         #center2 {
             display: flex;
@@ -48,19 +28,19 @@
         #spread {
             display: flex;
             justify-content: center;
-            justify-content: space-around;
+            /*justify-content: space-around;*/
             margin-bottom: 225px;
         }
         #parallax{
             background-image: url(image.png);
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        min-width: 100vw;
-        min-height:100vh;
-        position:absolute;
-        top: 0px;
-        left: 0px;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            min-width: 100vw;
+            min-height:100vh;
+            position:absolute;
+            top: 0px;
+            left: 0px;
         }
         #Center {
             background-color: rgba(0, 128, 0, 0.475);
@@ -76,8 +56,8 @@
             border-radius: 30px;
         }
         button{
-            width: 150px;
-            height: 50px;
+            width: 200px;
+            height: 80px;
         }
         body{
             overflow-x: hidden;
@@ -87,18 +67,47 @@
         body::-webkit-scrollbar {
    display: none;
  }
+
+
+ #navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  list-style-position: inside;
+  line-height: 200%;
+  font-size: 150%;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #111;
+}
     </style>
 </head>
-<body>
-    <div id="parallax">
-    <ul>
-        <li><a href="project.html">Home Page</a></li>
-        <li><a href="child-abuse.html">Child Abuse</a></li>
-        <li><a href="animal-abuse.html">Animal Abuse</a></li>
-        <li><a href="#">Emotinal Abuse</a></li>
-        <li><a href="Solutions.html">Solustion</a></li>
-        <li><a href="#">About Us</a></li>
-    </ul>
+<body id="parallax">
+    
+        <ul id="navbar">
+            <li><a href="home-page.html">Home Page</a></li>
+            <li><a href="child-abuse.html">Child Abuse</a></li>
+            <li><a href="animal-abuse.html">Animal Abuse</a></li>
+            <li><a href="#">Emotinal Abuse</a></li>
+            <li><a href="Solutions.html">Solution</a></li>
+            <li><a href="About-Us.html">About Us</a></li>  
+        </ul>
+    <div id="content">
     <div id="Center">
         <h1>Solutions for Abuse</h1>
     </div>

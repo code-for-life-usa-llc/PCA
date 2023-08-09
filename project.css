@@ -11,31 +11,7 @@ body {
  body::-webkit-scrollbar {
    display: none;
  }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    background-color: #111;
-  }
-
+ 
  #images {
    position: relative;
    left: -50px;
@@ -72,10 +48,47 @@ ul {
 #main-text {
    text-align: center;
    background-color: rgb(150, 150, 150);
-   font-size: 150%;
+   padding: 30px;
+   border-radius: 15px;
 }
 
-a {
-   /*text-align: center;
-   font-size: 30px;*/
+#content {
+  margin: 0 10vw 10vh 10vw;
+  font-size: 180%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 180%;
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  list-style-position: inside;
+  line-height: 200%;
+  font-size: 150%;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #111;
 }

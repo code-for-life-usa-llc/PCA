@@ -8,13 +8,20 @@
         h1 {
             font-size: 30px;
             text-align: center;
+            color: white;
         }
 
         body {
+            background-color: rgb(78, 74, 74);
             overflow-x: hidden;
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
         }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
 
         #some {
             position: relative;
@@ -25,32 +32,38 @@
         }
 
         #navbar {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    list-style-position: inside;
+    line-height: 200%;
+    font-size: 150%;
+  }
   
-        #navbar li {
-            float: left;
-        }
+  #navbar li {
+    float: left;
+  }
   
-        #navbar li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        #navbar li a:hover {
-            background-color: #111;
-        }
+  #navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #navbar li a:hover {
+    background-color: #111;
+  }
 
         #blue {
             background-color: aqua;
             text-align: center;
+            margin: 50px 23vw;
+            padding: 20px;
+            border-radius: 10px;
         }
 
         div {
@@ -58,33 +71,67 @@
             flex-direction: column;
             justify-content: center;
         }
+
+        #images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        img {
+            margin: 0px 50px;
+        }
+
+        ul {
+            list-style-position: inside;
+            line-height: 200%;
+        }
+
+        #content {
+            font-size: 170%;
+        }
+
+        #h {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 20px 10vw;
+        }
     </style>
 </head>
 <body>
     <ul id="navbar">
-        <li><a href="project.html">Home Page</a></li>
+        <li><a href="home-page.html">Home Page</a></li>
         <li><a href="child-abuse.html">Child Abuse</a></li>
-        <li><a href="#">Animal Abuse</a></li>
+        <li><a href="animal-abuse.html">Animal Abuse</a></li>
         <li><a href="#">Emotinal Abuse</a></li>
-        <li><a href="#">Solution</a></li>
-        <li><a href="#">About Us</a></li>  
+        <li><a href="Solutions.html">Solution</a></li>
+        <li><a href="About-Us.html">About Us</a></li>  
     </ul>
+<div id="content">
     <h1>Child abuse</h1>
-    <div>
+    <div id="images">
     <img src="https://ymcasm.org/wp-content/uploads/2021/05/stop-abuse-child-abuse-awareness-tshirt-felix.jpg" width="400" height="450px" align="center">
     <img src="https://www.nationalchildrensalliance.org/wp-content/uploads/2022/04/NCA-case-types-Infographic-2021_FINAL.png" width="500px" height=350px" align="center">
     </div>
+    <div id="h">
     <h1>What child abuse is</h1>
-    <pre> </pre> 
+    <p style="color: white; margin: 0 15vw; line-height: 150%;">Child abuse is a type of abuse that involves a child and a parent or someone that is an adult hits a child or beats them up. 
+        Child abuse is some of the abuses that everybody could see or experienced in there life. 
+        There are 7.2 million kids getting abused and the reason that the parents beat their children up is 
+        because they come home drunk or otherwise afflicted.</p>
+    </div>
     <div id="blue">
-    <h1>Facts on Child abuse</h1>
-    <ul>
+    <h2>Facts on Child abuse</h2>
+    <ul id="d">
         <li>One through seven children in the U.S have experienced abuse or neglect from the past year and some of the kids have enter foster care</li>
         <li>More than 600,000 children are abuse in the U.S each year.</li>
         <li>Neglect is the most common form of child abuse, followed by physical abuse, sexual abuse, and psychological abuse.</li>
-        <li></li>
-        <li></li>
+        <li>Children with disabilities are more likely to become victims of abuse than children without disabilities.</li>
+        <li>Neglect is the most common form of child abuse, followed by physical abuse, sexual abuse, and psychological abuse.</li>
     </ul>
+    </div>
 </div>
 </body>
 </html>
