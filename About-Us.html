@@ -5,41 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
-​
-        h1 {
-             color: darkblue;
-             font-size: 40px;
-    
-        }
-        h2 {
-            font-size: 25px;
-        }
-​
-        h3 {
-            color: turquoise;
-            font-size: 25px
-        }
-​
-        p {
-            font-size:20px ;
-        }
-        
-​
-        .parallax {
-        background-image: url("https://ica-hpl.com.my/wp-content/uploads/About-Us.jpg");
-        min-height: 500px; 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        }
-​
-        .border {
-            border: 3px solid grey;
-            width: 500px;
-        }
-
-        #navbar {
+#navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -65,42 +31,133 @@
 #navbar li a:hover {
   background-color: #111;
 }
+
+        h1 {
+             color: darkblue;
+             font-size: 40px;
+        }
+        h2 {
+            font-size: 40px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        p {
+            font-size:20px ;
+        }
+        .parallax {
+        background-image: url("https://ica-hpl.com.my/wp-content/uploads/About-Us.jpg");
+        height: 70vh;
+        min-width: 100vw;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0px;
+        top: 10vh;
+        margin: 0 0 20vh 0;
+        }
+        .border {
+            border: 3px solid grey;
+            width: 500px;
+        }
+        body {
+            text-align: center;
+            width: 100vw;
+            overflow-x: hidden;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        #center {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 50px;
+            margin-top: 50px;
+            width: 98vw;
+        }
+    
+        #background {
+            background: green;
+            width: 200px;
+            position: relative;
+            top: 7vh;
+            z-index: -1;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        #background1 {
+            background-color: darkgoldenrod;
+            color: turquoise;
+            font-size: 25px;
+            margin-bottom: 50px;
+            width: 400px;
+            /*position: relative;
+            left: 550px;*/
+            z-index: -1;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        #background2 {
+            background: green;
+            width: 400px;
+            /*position: relative;
+            left: 550px;*/
+            justify-self: center;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        #move2 {
+            position: relative;
+            left: -10px;
+        }
+        #content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            top: 60vh;
+            font-size: 150%;
+            line-height: 150%;
+        }
     </style>
 </head>
 <body style="background-color: rgba(255, 0, 0, 0.70);">
-    <div cl bass="background-nav">
-        <ul id="navbar">
-            <li><a href="home-page.html">Home Page</a></li>
-            <li><a href="child-abuse.html">Child Abuse</a></li>
-            <li><a href="animal-abuse.html">Animal Abuse</a></li>
-            <li><a href="#">Emotinal Abuse</a></li>
-            <li><a href="Solutions.html">Solution</a></li>
-            <li><a href="About-Us.html">About Us</a></li>  
-        </ul>
-    </div>
+    <ul id="navbar">
+        <li><a href="home-page.html">Home Page</a></li>
+        <li><a href="child-abuse.html">Child Abuse</a></li>
+        <li><a href="animal-abuse.html">Animal Abuse</a></li>
+        <li><a href="#">Emotinal Abuse</a></li>
+        <li><a href="Solutions.html">Solution</a></li>
+        <li><a href="About-Us.html">About Us</a></li>  
+    </ul>
     <div class="parallax"></div>
-    <h2>About PCA</h2>
-    
-    <h3>Mission Statement:</h3>
-    <p>Will add this tomorrow</p>
+<div id="content">
+    <h2 id="background">About PCA</h2>
+    <h3 id="background1">Mission Statement:</h3>
+    <p>Our team consists of three people who are passionate about preventing abuse and raising awareness. <br>We believe that everyone deserves respect and kindness, because we are all human beings from the same origin.</p>
     <!-- How is it seen in real life, why it's important, why you guys chose it, -->
-    <h2>Group Members</h2>
-    <div class="border">
-    <h3>Justin</h3>
-    <img src="" alt="Justin">
-    <p>Hello my name is Justin, I am 10 years old, and I go to bronx charter school for children. I live in the bronx and attend the Mott Haven site for Code For Life. A fun fact about myself is that I won a gamer tournament.  </p>
+    <br>
+    <h2 id="background2">Group Members</h2>
+    <div id="center">
+        <div class="border" >
+        <h3>Justin</h3>
+        <p>Hello my name is Justin, I am 10 years old, and I go to bronx charter school for children. I live in the bronx and attend the Mott Haven site for Code For Life. A fun fact about myself is that I won a gamer tournament.  </p>
+        </div>
+        <div class="border">
+        <h3>Henry</h3>
+        <p>Hello my name is Henrey, I am 12 years old, and I go to St.Martin de  Porres Academy. I live in the bronx and attend the Mott Haven site Code For Life. A fun facct about myself is that I am in 8th grade </p>
+        </div>
+        <div class="border">
+        <h3>Axxel</h3>
+        <p>Hello my name is Axxel, I am 12 years old, and I go to brilla college prep middle school. I live in the bronx and attend Mott Haven site for Code For Life. A fun fsct about myself is that I play Rated R games.</p>
+        </div>
     </div>
-​
-    <div class="border">
-    <h3>Henry</h3>
-    <img src="" alt="Henry">
-    <p>Hello my name is Henrey, I am 12 years old, and I go to St.Martin de  Porres Academy. I live in the bronx and attend the Mott Haven site Code For Life. A fun facct about myself is that I am in 8th grade </p>
-    </div>
-​
-    <div class="border">
-    <h3>Axxel</h3>
-    <img src="" alt="Axxel">
-    <p>Hello my name is Axxel, I am 12 years old, and I go to brilla college prep middle school. I live in the bronx and attend Mott Haven site for Code For Life. A fun fsct about myself is that I play Rated R games.</p>
-    </div>
+    </ul>
+</div>
 </body>
 </html>
