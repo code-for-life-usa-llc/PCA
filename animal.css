@@ -24,9 +24,10 @@ top: 30px;
         background-size: cover;
         min-width: 100vw;
         min-height:100vh;
-        position:absolute;
+        position: absolute;
         top: 0px;
         left: 0px;
+        z-index: -1;
   }
   body {
     /*display: flex;
@@ -75,6 +76,7 @@ top: 30px;
     list-style-position: inside;
     line-height: 200%;
     font-size: 150%;
+    z-index: 2;
   }
   
   #navbar li {

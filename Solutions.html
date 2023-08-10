@@ -23,7 +23,11 @@
             text-align: center;
         }
         p {
-            font-size: 20px;
+            font-size: 150%;
+            line-height: 150%;
+        }
+        h1 {
+            font-size: 200%;
         }
         #spread {
             display: flex;
@@ -41,6 +45,7 @@
             position:absolute;
             top: 0px;
             left: 0px;
+            z-index: -1;
         }
         #Center {
             background-color: rgba(0, 128, 0, 0.475);
@@ -98,27 +103,28 @@
 }
     </style>
 </head>
-<body id="parallax">
-    
+<body>
         <ul id="navbar">
             <li><a href="home-page.html">Home Page</a></li>
             <li><a href="child-abuse.html">Child Abuse</a></li>
             <li><a href="animal-abuse.html">Animal Abuse</a></li>
-            <li><a href="#">Emotinal Abuse</a></li>
+            <li><a href="emotional.html">Emotinal Abuse</a></li>
             <li><a href="Solutions.html">Solution</a></li>
             <li><a href="About-Us.html">About Us</a></li>  
         </ul>
+<div id="parallax">
+    <div style="height: 10vh"></div>
     <div id="content">
     <div id="Center">
         <h1>Solutions for Abuse</h1>
     </div>
     <div id="center2">
-        <h1 id="Abuse">Click on buttons below to see every solution</h1>
+        <p id="Abuse">Click on buttons below to see every solution</p>
     </div>
     <div id="spread">
-        <button onclick="document.getElementById('Abuse').innerHTML = 'Child Abuse <p> Tell the parents to calm down.</p><p> Creating social connectons with family and friends. </p><p>Recognize the link between domestic abuse and animal abuse</p>'"> Child Abuse</button>
-        <button onclick="document.getElementById('Abuse').innerHTML = 'Animal Abuse <p>  Recognize the link between domestic abuse and animal abuse.</p><p>Teach children and others to respect animals.</p><p> How children treat animals comes from how the adults in their lives treat animals.</p>'"> Animal Abuse</button>
-        <button  onclick="document.getElementById('Abuse').innerHTML = 'Emotional Abuse <p> Understand the abuser - even though it can seem weird to have compassion for the abuser, sometimes changing the way you view the abuser can give you insight into coping with the abuse. Often abusers are insecure, anxious or depressed and remembering that may help you to keep the abuse in its proper context.</p> <p>Speak in a calm, clear voice and state a reasonable expectation such as: Stop teasing me. I want you to treat me with dignity and respect.</p> <p>Remember you are not alone and that the abuse is not your fault Call a help-line. Go to Womanslaw.org to find state and national help. Contact a child and family welfare agency.Talk to your doctor or other health professionals</p>'"> Emotional Abuse</button>
+        <button onclick="document.getElementById('Abuse').innerHTML = '<h1>Child Abuse</h1> <p> Tell the parents to calm down.</p><p> Creating social connectons with family and friends. </p><p>Recognize the link between domestic abuse and animal abuse</p>'"> Child Abuse</button>
+        <button onclick="document.getElementById('Abuse').innerHTML = '<h1>Animal Abuse</h1> <p>  Recognize the link between domestic abuse and animal abuse.</p><p>Teach children and others to respect animals.</p><p> How children treat animals comes from how the adults in their lives treat animals.</p>'"> Animal Abuse</button>
+        <button  onclick="document.getElementById('Abuse').innerHTML = '<h1>Emotional Abuse</h1> <p> Understand the abuser - even though it can seem weird to have compassion for the abuser, sometimes changing the way you view the abuser can give you insight into coping with the abuse. Often abusers are insecure, anxious or depressed and remembering that may help you to keep the abuse in its proper context.</p> <p>Speak in a calm, clear voice and state a reasonable expectation such as: Stop teasing me. I want you to treat me with dignity and respect.</p> <p>Remember you are not alone and that the abuse is not your fault Call a help-line. Go to Womanslaw.org to find state and national help. Contact a child and family welfare agency.Talk to your doctor or other health professionals</p>'"> Emotional Abuse</button>
     </div>
     </div>
     <!-- <ul>
@@ -130,5 +136,6 @@
         <br>
         <li>Recognize the link between domestic abuse and animal abuse.</li>
     </ul> -->
+</div>
 </body>
 </html>
